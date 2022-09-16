@@ -1,6 +1,15 @@
-+++ date = "2021-05-01" title = "Arquitectura de Referència de Microserveis" description = "Davant la ràpida evolució dels estils d’arquitecturals, s'ha identificat la necessitat d’establir una arquitectura de referència per aquelles aplicacions que opten per arquitectures altament distribuïdes tant a nivell lògic com a nivell físic. L'arquitectura presentada en aquesta pàgina s'orienta al desplegament d'aplicacions en microserveis i microfrontends de forma que un arquitecte la pugui usar com a punt de partida per fer el disseny d'una solució." responsable = "Unitat d'Arquitectura" sections = ["drafts"] blog_tags = ["microserveis","monolits","referència","arquitectura","reutilització"] categories = ["microserveis","monolits","referència","arquitectura","reutilització"] key = "MAIG2021" +++
++++
+date = "2021-05-01"
+title = "Arquitectura de Referència de Microserveis"
+description = "Davant la ràpida evolució dels estils d’arquitecturals, s'ha identificat la necessitat d’establir una arquitectura de referència per aquelles aplicacions que opten per arquitectures altament distribuïdes tant a nivell lògic com a nivell físic. L'arquitectura presentada en aquesta pàgina s'orienta al desplegament d'aplicacions en microserveis i microfrontends de forma que un arquitecte la pugui usar com a punt de partida per fer el disseny d'una solució."
+responsable = "Unitat d'Arquitectura"
+sections = ["drafts"]
+blog_tags = ["microserveis","monolits","referència","arquitectura","reutilització"]
+categories = ["microserveis","monolits","referència","arquitectura","reutilització"]
+key = "MAIG2021"
++++
 
-# Arquitectura de referència de microserveis
+## Arquitectura de referència de microserveis
 
 ## Introducció
 
@@ -53,11 +62,11 @@ Els principis són els **valors fonamentals** que s’apliquen en l’arquitectu
 
 ### Disseny funcional
 
-L'objectiu del disseny funcional és la **distribució adequada del conjunt de funcionalitats de la solució en diferents blocs funcionals**. 
+L'objectiu del disseny funcional és la **distribució adequada del conjunt de funcionalitats de la solució en diferents blocs funcionals**.
 
 Els principis bàsics que han de guiar la descomposició funcional són:
 
-* **Alta cohesió:** El codi que es modifica junt, que dona resposta a una funcionalitat concreta, ha d’estar arquitecturalment junt. 
+* **Alta cohesió:** El codi que es modifica junt, que dona resposta a una funcionalitat concreta, ha d’estar arquitecturalment junt.
 
 * **Baix acoblament:** Quan un bloc funcional està poc acoblat amb un altre, un canvi en un d'ells no implica canviar l'altre.
 
@@ -151,7 +160,7 @@ El document complet en el qual es basa aquesta pàgina Web es pot descarregar co
 
 * [HON21] The Microservices Observability Problem [Internet]. Honeycomb. [citat 18 març 2021]. Disponible a: https://www.honeycomb.io/microservices/
 
-* [NEW15] Newman S. Building microservices: designing fine-grained systems. First Edition. Beijing Sebastopol, CA: O’Reilly Media; 2015. 259 p. 
+* [NEW15] Newman S. Building microservices: designing fine-grained systems. First Edition. Beijing Sebastopol, CA: O’Reilly Media; 2015. 259 p.
 
 * [VER13] Vernon V. Implementing domain-driven design. Upper Saddle River, NJ; Mexico City: Addison-Wesley; 2013.
 

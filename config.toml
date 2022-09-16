@@ -5,14 +5,13 @@ contentDir = "content"
 layoutDir = "layouts"
 publishDir = "public"
 buildDrafts = true
-baseURL = "https://marcperemiquel.github.io/portal-ctti"
-canonifyURLs = false
+baseURL = "https://marcperemiquel.github.io/portal-ctti/"
+canonifyURLs = true
 disqusShortname = "arquitectura-ctti"
 pluralizelisttitles = false
 disablePathToLower = true
 
 Paginate = 10
-
 
 [params]
 	noticieshome = 10
