@@ -31,12 +31,11 @@ jobs:
     runs-on: ubuntu-20.04
     env:
       NVM_VERSION: 0.39.1
-      NVM_DIR: '$HOME/.nvm'
       HUGO_VERSION: 0.49.2
     steps:
       - name: Install NodeJS with NVM
         run: |
-          mkdir $NVM_DIR \
+          export NVM_DIR="$HOME/.nvm" && mkdir $NVM_DIR \
           && wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v${NVM_VERSION}/install.sh | bash \
           && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" \
           && nvm install 8.17.0 \
