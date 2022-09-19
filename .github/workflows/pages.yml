@@ -52,8 +52,13 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Test NodeJs
-        run: node -v
+      - name: Index with Algolia
+        run: |
+          cd _tasks/algolia/ \
+          && npm install markdown2json \
+          && npm install algoliasearch \
+          && npm install request \
+          && node index-algolia.js
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
