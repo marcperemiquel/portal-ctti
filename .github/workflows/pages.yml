@@ -61,6 +61,8 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Index with Algolia
+        env:
+          ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_SECRET }}
         run: |
           cd _tasks/algolia/ \
           && npm install markdown2json \
