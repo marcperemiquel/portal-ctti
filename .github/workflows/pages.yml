@@ -36,7 +36,8 @@ jobs:
     steps:
       - name: Install NodeJS with NVM
         run: |
-          wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v${NVM_VERSION}/install.sh | bash \
+          mkdir $NVM_DIR \
+          && wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v${NVM_VERSION}/install.sh | bash \
           && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" \
           && nvm install 8.17.0 \
           && nvm alias default 8.17.0 \
