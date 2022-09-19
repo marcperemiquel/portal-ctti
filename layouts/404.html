@@ -18,7 +18,7 @@
 
 	<section class="border-start">
 			<article class="bgGrey">
-				<div class="container">	
+				<div class="container">
 					<div class="row">
 						<div class="capcelera_basica col-sm-12">
 							<div class="capcelera_basica_cont">
@@ -38,29 +38,29 @@
 
 							</div>
 						</div>
-					</div>					
+					</div>
 				</div>
-			</article>						
+			</article>
 
-			
-			<article class="padding-xs padding-sm padding-md contingut">				
+
+			<article class="padding-xs padding-sm padding-md contingut">
 				<div class="container">
 					La pàgina que estàs cercant no s'ha trobat. Pots provar amb el cercador de trobar el que busques:
 					<p>&nbsp;</p>
 
-					<form id="cercadorIndex" role="search" class="navbar-form cercador_vermell col-sm-12" method="get" action="/cercador/" onsubmit="location.href=this.action+'#?query='+this.cerca.value; return false;">
+					<form id="cercadorIndex" role="search" class="navbar-form cercador_vermell col-sm-12" method="get" action="/portal-ctti/cercador/" onsubmit="location.href=this.action+'#?query='+this.cerca.value; return false;">
 						<div class="form-group">
 							<input type="search" name="query" id="cerca"
 								title="Introdu&iuml;u les paraules a cercar"
-								class="form-control" placeholder="Cerca al lloc" /> 
+								class="form-control" placeholder="Cerca al lloc" />
 							<span class="btn btn-default hidden-xs" onclick="$('#cercadorIndex').submit()"></span>
 							<button class="btn btn-default visible-xs" title="Neteja" type="button"></button>
-						</div>								
-					</form>					
-				</div>	
-			</article>	
+						</div>
+					</form>
+				</div>
+			</article>
 
-	</section>	
+	</section>
 
 	{{ partial "footer.html" . }}
 
