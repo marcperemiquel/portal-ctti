@@ -38,8 +38,8 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Install NodeJs
         run: |
-          curl -sL https://deb.nodesource.com/setup_8.x -o /tmp/nodesource_setup.sh
-          && sudo bash /tmp/nodesource_setup.sh
+          curl -sL https://deb.nodesource.com/setup_8.x -o /tmp/nodesource_setup.sh \
+          && sudo bash /tmp/nodesource_setup.sh \
           && sudo apt install nodejs
       - name: Checkout
         uses: actions/checkout@v3
