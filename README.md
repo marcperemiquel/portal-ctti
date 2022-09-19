@@ -1,2 +1,3 @@
-# Portal d'Arquitectura CTTI (http://canigo.ctti.gencat.cat/)
+# Portal d'Arquitectura CTTI (Testing)
 
+<https://marcperemiquel.github.io/portal-ctti/>

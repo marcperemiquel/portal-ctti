@@ -24,9 +24,9 @@ function replaceHighLight(content){
 
 /* global instantsearch */
 app({
-  appId: 'SQZ0PDH35B',
-  apiKey: '7e8cf02a661b67e4938ddce64b62470d',
-  indexName: 'prod_ARQUITECTURA'
+  appId: '5KPE49FFYZ',
+  apiKey: 'f05b4771a5d26db6f9b7359752a306d5',
+  indexName: 'test_ARQUITECTURA'
 });
 
 function app(opts) {

@@ -8,8 +8,8 @@ var fs = require("fs");
 var request = require('request');
 
 var algoliasearch = require('algoliasearch');
-var client = algoliasearch('SQZ0PDH35B', process.env.ALGOLIA_API_KEY);
-var algolia = client.initIndex('prod_ARQUITECTURA');
+var client = algoliasearch('5KPE49FFYZ', process.env.ALGOLIA_API_KEY);
+var algolia = client.initIndex('test_ARQUITECTURA');
 
 algolia.setSettings({
 	'removeStopWords':[true,'ca']
