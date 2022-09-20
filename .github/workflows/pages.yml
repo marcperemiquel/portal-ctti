@@ -70,10 +70,15 @@ jobs:
           && npm install request \
           && node index-algolia.js
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v1
         with:
           name: public-pages
           path: ./public
+      - name: Upload index
+        uses: actions/upload-artifact@v3
+        with:
+          name: latest-algolia-index
+          path: ./public/index.json
 
   # Deployment job
   deploy:
