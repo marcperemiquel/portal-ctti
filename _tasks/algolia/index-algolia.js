@@ -35,7 +35,7 @@ if (!fs.existsSync(_indexDir)){
 }
 
 //gets current index
-request('https://marcperemiquel.github.io/portal-ctti/index.json', function (error, response, body) {
+request('https://marcperemiquel.github.io/portal-ctti/index2.json', function (error, response, body) {
 	if(fs.existsSync(_indexDir+"index.json")){
 		fs.unlinkSync(_indexDir+"index.json");
 	}
