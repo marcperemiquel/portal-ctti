@@ -4,12 +4,11 @@
 			<div class="container" role="menu">
 				<div class="row clearfix menuNav">
 					<div class="col-md-3 col-xs-3 column visible-xs coloca ">
-						<button type="button" onclick="amunt();" title="Menu"
-							class="navbar-toggle pull-left" data-toggle="collapse"
-							data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span> <span
-								class="icon-bar"></span> <span class="icon-bar"></span> <span
-								class="icon-bar"></span>
+						<button type="button" onclick="amunt();" title="Menu" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
 						</button>
 					</div>
 
@@ -28,12 +27,9 @@
 
 				<div class="collapse dos">
 					<div class="shadowBox">
-						<form class="navbar-form navbar-left primer" action="/portal-ctti/cercador/" method="get"
- 						onsubmit="location.href=this.action+'?q='+this.cerca_cap.value; return false;">
+						<form class="navbar-form navbar-left primer" action="/portal-ctti/cercador/" method="get" onsubmit="location.href=this.action+'?q='+this.cerca_cap.value; return false;">
 							<div class="form-group">
-								<input type="search" class="form-control" name="q" id="cerca_cap"
-									title="Cerca"
-									placeholder="Cerca" />
+								<input type="search" class="form-control" name="q" id="cerca_cap" title="Cerca" placeholder="Cerca" />
 								<button type="button" title="Neteja" class="btn btn-default"></button>
 								<input type="submit" class="ocult" name="Cerca" value="Cerca" />
 							</div>
@@ -45,20 +41,16 @@
 
 					<div class="row">
 						<div class="col-md-6 col-sm-4 column">
-							<a class="img-responsive logo" title="Generalitat de Catalunya"
-								href="https://ctti.gencat.cat/">gencat.cat</a>
-							<button class="menu_tancar visible-xs collapsed"
-								data-target=".navbar-collapse" data-toggle="collapse"
-								title="Tancar"></button>
+							<a class="img-responsive logo" title="Generalitat de Catalunya" href="https://ctti.gencat.cat/">gencat.cat</a>
+							<button class="menu_tancar visible-xs collapsed" data-target=".navbar-collapse" data-toggle="collapse" title="Tancar"></button>
 						</div>
 
 						<div class="col-md-6 col-sm-8 column hidden-xs hidden-mg">
 							<form class="navbar-form cercador_vermell hidden-xs pull-right" action="/portal-ctti/cercador/"  method="get" onsubmit="location.href=this.action+'?q='+this.cerca2.value; return false;">
 								<div class="form-group">
 									<label class="hidden" for="cerca2">Cerca</label>
-									<input id="cerca2" class="form-control" type="search"
-									placeholder="Cerca" name="q" title="Cerca">
-									<input class="btn btn-default" type="submit" title="Cerca" value=" ">
+									<input id="cerca2" class="form-control" type="search" placeholder="Cerca" name="q" title="Cerca" />
+									<input class="btn btn-default" type="submit" title="Cerca" value="" />
 								</div>
 							</form>
 
