@@ -33,6 +33,10 @@ jobs:
       NVM_VERSION: 0.39.1
       HUGO_VERSION: 0.49.2
     steps:
+      - name: Init envs
+        id: init_envs
+        run: |
+          echo "GITHUB_OUTPUT=" >> $GITHUB_ENV
       - name: Install NodeJS with NVM
         run: |
           wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v${NVM_VERSION}/install.sh | bash \
